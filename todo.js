@@ -1,4 +1,4 @@
-angular.module('todoApp', [])
+angular.module('app', [])
     .controller('TodoListController', function() {
         var todoList = this;
         todoList.todos = [
@@ -25,4 +25,7 @@ angular.module('todoApp', [])
                 if (!todo.done) todoList.todos.push(todo);
             });
         };
+    })
+    .controller('NameController', function() {
+        this.yourName = '';
     });
